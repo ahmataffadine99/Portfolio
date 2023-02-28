@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Decrouvez mes experiences">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>AHMAT ABDOULAYE AFFADINE</h1>
+	</header>
+	<nav>
+		<div class="ordre">
+			<ul>
+				<li class="ind">
+					<a href="index.html">Acceuil</a>
+				</li>
+				<li class="exp">
+					<a href="experiences-pro.html">Experiences </a>
+					
+				</li>
+				<li class="hob">
+					<a href="hobbies.html">Loisirs</a>
+				</li>
+				<li class="con">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="rouge">
+		<h1>Contactez-moi !</h1>
+		<div class="sec">
+			<p>Mon identité vous intersse ?</p>
+			<p>N'hesitez pas a me contacter a l'adresse ci-joint :<strong>affadine.ahmatabdoulaye@uit
+			ac.ma</strong></p>
+			<p>Je vous recontacterai dans un bref delai.</p>
+			Merci et a très bientot !!!!
+		</div>
+	</section>
+	  <div>
+        <form onsubmit="return verifForm(this)">
+            <fieldset>
+                <legend>Informations personnel</legend>
+                
+                <label>Votre sexe :</label>
+                <input type="radio" name="sex"> <label>Homme</label>
+                <input type="radio" name="sex"> Femme<br>
+
+                <label>Centre d'interet</label><br>
+                <input type="checkbox" name="ci"> Voyage<br>
+                <input type="checkbox" name="ci"> Lecture<br>
+                <input type="checkbox" name="ci"> Natation<br>
+                <input type="checkbox" name="ci"> Musique<br>
+
+                <label>Ville :</label><br>
+                <select>
+                    <option>Kenitra</option>
+                    <option>Rabat</option>
+                    <option>Casa</option>
+                    <option>Fes</option>
+                    <option>Meknes</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Ecrire ton email</legend>
+  <p>
+      <label>Pseudo : </label> </label><input type="text" name="pseudo" onblur="verifPseudo(this)" /> <br><br>
+      <label>E-mail :</label> <input type="text" name="email" size="30" onblur="verifMail(this)" /><br><br>
+      <label>Âge :</label> <input type="text" name="age" size="2" onblur="verifAge(this)" /> ans<br><br>
+      <label> Message :</label> 
+      <textarea name="message" onblur="verifMessage(this)"></textarea><br><br>
+      <input type="submit" value="Valider" />
+  </p>
+            </fieldset>
+        </form>
+    </div>
+            <footer>
+                <p> Copyright 2021 AHMAT ABDOULAYE AFFADINE</p>
+            </footer>
+    </body>
+</html>
